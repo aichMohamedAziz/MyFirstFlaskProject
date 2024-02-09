@@ -223,4 +223,4 @@ def delete_article(id):
 
 if __name__ == '__main__':
     app.secret_key= 'secret123'
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
