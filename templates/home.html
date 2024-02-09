@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>Welcome to Postify</h1>
+    <div style="text-align: center;">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/article-writing-5650452-4708049.png" alt="Welcome Image" style="width: 300px; height: auto;">
+    </div>
+    <p class="lead">This project is built using Python and the Flask framework. It allows adding, modifying, and deleting articles.</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+  </div>
+{% endblock %}
